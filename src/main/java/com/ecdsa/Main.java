@@ -102,10 +102,10 @@ public class Main
         System.out.println(String.format("The private key: %s", privKey));
         System.out.println(String.format("The uncompressed public key: %s", publicKey));
 
-        //If the Y value for the Public Key is odd.
+        // If the Y value for the Public Key is odd.
         if (publicKey.y.mod(BigInteger.TWO).equals(BigInteger.ONE))
         {
-            System.out.println(String.format("The compressed public key: 03%s", publicKey.x.toString(16)));
+            System.out.println(String.format("The uncompressed public key: 03%s", publicKey.x.toString(16)));
         }
         else
         {
