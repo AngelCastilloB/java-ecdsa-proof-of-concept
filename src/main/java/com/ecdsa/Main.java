@@ -65,7 +65,7 @@ public class Main
 {
     // Public specs for the secp256k1 curve.
 
-    //These two defines the elliptic curve. y^2 = x^3 + A * x + B
+    // These two defines the elliptic curve. y^2 = x^3 + A * x + B
     static BigInteger A = BigInteger.ZERO;
     static BigInteger B = BigInteger.valueOf(7);
 
@@ -73,9 +73,9 @@ public class Main
     static BigInteger P = new BigInteger("fffffffffffffffffffffffffffffffffffffffffffffffffffffffefffffc2f", 16);
 
     // Number of points in the field.
-
-    // This is our generator point. Trillions of dif ones possible
     static BigInteger N = new BigInteger("fffffffffffffffffffffffffffffffebaaedce6af48a03bbfd25e8cd0364141", 16);
+    
+    // This is our generator point. Trillions of dif ones possible
     static ECPoint    G = new ECPoint(
             new BigInteger("79be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798", 16),
             new BigInteger("483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8", 16));
@@ -83,10 +83,10 @@ public class Main
     // Private key.
     static BigInteger privKey = new BigInteger("A0DC65FFCA799873CBEA0AC274015B9526505DAAAED385155425F7337704883E", 16);
 
-    //replace with a truly random number
+    // Replace with a truly random number
     static BigInteger randNum = new BigInteger("28695618543805844332113829720373285210420739438570883203839696518176414791234", 10);
 
-    // the hash of your message/transaction
+    // The hash of your message/transaction
     static BigInteger hashOfThingToSign = new BigInteger("86032112319101611046176971828093669637772856272773459297323797145286374828050", 10);
 
     /**
