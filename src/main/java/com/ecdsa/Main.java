@@ -105,7 +105,7 @@ public class Main
         // If the Y value for the Public Key is odd.
         if (publicKey.y.mod(BigInteger.TWO).equals(BigInteger.ONE))
         {
-            System.out.println(String.format("The uncompressed public key: 03%s", publicKey.x.toString(16)));
+            System.out.println(String.format("The compressed public key: 03%s", publicKey.x.toString(16)));
         }
         else
         {
